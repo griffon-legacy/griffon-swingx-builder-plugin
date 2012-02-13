@@ -4,7 +4,12 @@
 // beware of messing up SVN directories!
 //
 
-//TODO:
-// parse Builder.groovy
-// remove all nodes referenceing SwingXBuilder
-// re-write Builder.groovy
+def configText = """jx {
+    'groovy.swing.SwingXBuilder' {
+        view = '*'
+    }
+}"""
+if(builderConfigFile.text.contains(configText)) {
+    println 'Removing SwingXBuilder from Builder.groovy'
+    builderConfigFile.text -= configText
+}
