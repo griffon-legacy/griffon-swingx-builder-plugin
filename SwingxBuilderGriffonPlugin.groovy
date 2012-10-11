@@ -1,7 +1,7 @@
 class SwingxBuilderGriffonPlugin {
-    String version = '0.6'
+    String version = '0.7'
     // the version or versions of Griffon the plugin is designed for
-    String griffonVersion = '0.9.5 > *'
+    String griffonVersion = '1.1.0 > *'
     // the other plugins this plugin depends on
     Map dependsOn = [:]
     // resources that are included in plugin packaging
@@ -29,7 +29,7 @@ class SwingxBuilderGriffonPlugin {
     String title = 'SwingXBuilder Plugin'
     // accepts Markdown syntax. See http://daringfireball.net/projects/markdown/ for details
     String description = '''
-Brings the [SwingXBuilder][1] libraries (based on [SwingX 1.6.3][2]) into your Griffon application.
+Brings the [SwingXBuilder][1] libraries (based on [SwingX 1.6.4][2]) into your Griffon application.
 
 Usage
 ----
@@ -39,6 +39,6 @@ to known what nodes are available.Refer to the [builder's][1] page to known what
 
 
 [1]: http://griffon.codehaus.org/SwingXBuilder
-[2]: https://swingx.dev.java.net
+[2]: http://swingx.java.net/
 '''
 }
